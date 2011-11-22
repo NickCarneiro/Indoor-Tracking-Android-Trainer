@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/scroll"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+
+<TextView  
+    android:id="@+id/Connected"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+    
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="My Wifi IP:"
+    />
+<TextView  
+    android:id="@+id/Ip"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+S
+<TextView  
+    android:id="@+id/Ssid"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+
+<TextView  
+    android:id="@+id/Bssid"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+
+
+<TextView  
+    android:id="@+id/Speed"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Rssi:"
+    />
+<TextView  
+    android:id="@+id/Rssi"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+
+<TextView  
+    android:id="@+id/Mac"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+    
+<Button android:layout_width="wrap_content" android:onClick="refresh" 
+	android:layout_height="wrap_content" android:text="Refresh" 
+	android:id="@+id/button1">
+</Button>
+
+<EditText 
+	android:layout_height="wrap_content" 
+	android:text="0" android:id="@+id/xPosition" 
+	android:inputType="numberSigned"
+	android:layout_width="match_parent">
+</EditText>
+
+<EditText 
+	android:layout_height="wrap_content" android:text="0" 
+	android:id="@+id/yPosition" 
+	android:inputType="numberSigned"
+	android:layout_width="match_parent">
+</EditText>
+<Button android:text="Average" android:id="@+id/button2" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:onClick="average">
+</Button>
+<Button android:text="Save State" android:id="@+id/button3"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:onClick="saveState">
+</Button>
+
+<Button
+    android:id="@+id/button4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Read Data" 
+    android:onClick="readData"/>
+
+<Button
+    android:id="@+id/button5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Lookup" 
+    android:onClick="lookup"/>
+</LinearLayout>
+</ScrollView>
